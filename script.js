@@ -6,3 +6,8 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     console.log("Navigation:", link.getAttribute("href"));
   });
 });
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
